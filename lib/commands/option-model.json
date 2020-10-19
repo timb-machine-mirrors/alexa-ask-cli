@@ -167,5 +167,24 @@
     "name": "keywords",
     "description": "Keywords can be description of tasks, task name or tags in task definition.\n[MULTIPLE]: Values can be separated by comma.",
     "stringInput": "OPTIONAL"
+  },
+  "debug-port": {
+    "name": "debug-port",
+    "description": "Debug port.",
+    "stringInput": "OPTIONAL",
+    "rule": [{
+      "type": "INTEGER"
+    }]
+  },
+  "wait-for-attach": {
+    "name": "wait-for-attach",
+    "description": "Waits for inspector to attach.",
+    "alias": null,
+    "stringInput": "NONE"
+  },
+  "skillCodeRegion": {
+    "name": "region",
+    "description": "Name of region for which the skill code will be referred.",
+    "stringInput": "OPTIONAL"
   }
 }
